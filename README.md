@@ -1,7 +1,6 @@
 # AI Resume Parser & Candidate Ranking System
 
-> Resume screening pipeline built for the AI/ML track at **[hireai.rooman.com](https://hireai.rooman.com)**,
-> Rooman's AI recruitment platform. Parses PDF/DOCX/TXT resumes, extracts structured
+>Parses PDF/DOCX/TXT resumes, extracts structured
 > candidate features, scores them against a job description with a hybrid
 > NLP-similarity engine and a trained gradient-boosting model, and returns
 > fully explainable, ranked results via a CLI and a REST API.
