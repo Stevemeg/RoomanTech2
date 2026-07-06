@@ -29,7 +29,7 @@ persisted, trained ML model used at inference (not a rule-based stand-in).
 
 ```bash
 # 1. Clone & set up
-git clone <fork-url> && cd AIML-Template
+git clone <https://github.com/Stevemeg/RoomanTech2> && cd AIML-Template
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm   # optional — see "Assumptions" below
