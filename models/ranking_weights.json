@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "skills": 0.501117,
+    "experience": 0.318376,
+    "education": 0.139111,
+    "semantic": 0.041397
+  },
+  "scale": 8.0,
+  "midpoint": 0.5
+}

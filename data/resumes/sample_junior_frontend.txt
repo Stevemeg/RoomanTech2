@@ -1,0 +1,17 @@
+Sam Okafor
+sam.okafor.demo@example.com | +1 555-010-0199
+
+Summary
+Frontend developer with 1 year of experience building marketing pages.
+
+Skills
+HTML, CSS, JavaScript, React
+
+Experience
+Junior Frontend Developer, Startup Collective
+Jun 2024 - Present
+- Built and maintained landing pages
+- Collaborated with designers on UI polish
+
+Education
+Bachelor of Arts in Graphic Design, Riverside College, 2023

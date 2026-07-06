@@ -1,0 +1,33 @@
+Job Title: Senior Python Backend Engineer
+
+Location: Remote / Bangalore
+Experience: 4-7 years
+
+About the role:
+We are looking for a Senior Python Backend Engineer to design, build, and
+maintain the APIs and data pipelines powering our recruitment platform.
+You will work closely with ML engineers and frontend developers to ship
+features end-to-end.
+
+Responsibilities:
+- Design and implement scalable REST APIs (FastAPI / Django REST)
+- Build ETL pipelines for resume and job-posting ingestion
+- Optimize PostgreSQL queries and database schemas
+- Integrate ML models into production services
+- Mentor junior engineers and review code
+
+Required skills:
+- 4+ years of Python in production
+- Strong experience with FastAPI or Django
+- PostgreSQL, Redis
+- Docker, AWS (ECS / Lambda / S3)
+- REST API design, authentication (OAuth2 / JWT)
+
+Nice to have:
+- Experience with sentence-transformers or other NLP libraries
+- Familiarity with Celery / async task queues
+- Kubernetes
+- CI/CD with GitHub Actions
+
+Education:
+- Bachelor's or Master's degree in Computer Science or related field

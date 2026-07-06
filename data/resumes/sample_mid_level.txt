@@ -1,0 +1,17 @@
+Priya Nair
+priya.nair.demo@example.com | 91-9876543210
+
+Summary
+Python developer with 3 years of experience building internal tools.
+
+Skills
+Python, Flask, PostgreSQL, Docker, Git
+
+Experience
+Python Developer, MidCo Solutions
+Jan 2022 - Present
+- Built internal dashboards with Flask and PostgreSQL
+- Automated reporting scripts, saving 5 hours/week
+
+Education
+B.Tech in Information Technology, Regional Engineering College, 2021

@@ -1,0 +1,77 @@
+# Application configuration
+
+parser:
+  supported_formats: [pdf, docx, txt]
+  max_file_size_mb: 10
+
+nlp:
+  spacy_model: en_core_web_sm
+
+features:
+  skills:
+    taxonomy_path: config/skills_taxonomy.json
+    fuzzy_threshold: 0.85
+  experience:
+    date_formats:
+      - "%b %Y"
+      - "%B %Y"
+      - "%m/%Y"
+      - "%Y"
+  education:
+    degree_keywords:
+      - bachelor
+      - master
+      - phd
+      - doctorate
+      - mba
+      - btech
+      - mtech
+    # Ladder used to compare a candidate's highest degree against a JD's
+    # required degree level. Higher number = more advanced. Aliases map to
+    # the same level as their canonical keyword above.
+    degree_levels:
+      diploma: 1
+      associate: 1
+      bachelor: 2
+      btech: 2
+      "b.tech": 2
+      "be": 2
+      "b.e.": 2
+      bsc: 2
+      "b.sc": 2
+      master: 3
+      mtech: 3
+      "m.tech": 3
+      "me": 3
+      "m.e.": 3
+      msc: 3
+      "m.sc": 3
+      mba: 3
+      phd: 4
+      doctorate: 4
+
+similarity:
+  method: hybrid           # tfidf | embedding | hybrid
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  tfidf_weight: 0.4
+  embedding_weight: 0.6
+
+ranking:
+  # "gradient_boosting" (trained model, see models/ranking_model.joblib) is
+  # used if a trained model file exists; otherwise the pipeline falls back
+  # to "logistic" (the weights below, used as a transparent cold-start prior).
+  # Set to "logistic" to force the transparent linear model even if a
+  # trained gradient-boosting model is present.
+  model_type: gradient_boosting
+  weights:
+    skills: 0.45
+    experience: 0.30
+    education: 0.15
+    semantic: 0.10
+  min_score_threshold: 0.30
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  cors_origins:
+    - http://localhost:3000

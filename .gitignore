@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Data — don't commit candidate PII
+data/resumes/*
+data/processed/*
+!data/resumes/.gitkeep
+!data/processed/.gitkeep
+# Exceptions: synthetic, fictional demo resumes used by `make run` / README
+# sample output. No real candidate data — see data/resumes/README.md.
+!data/resumes/README.md
+!data/resumes/sample.pdf
+!data/resumes/sample_mid_level.txt
+!data/resumes/sample_junior_frontend.txt
+
+# Models — locally-retrained artifacts are excluded by default; the two
+# files below are the demo models shipped with the repo (trained on
+# synthetic bootstrap data, see models/README.md) so the pipeline uses a
+# real trained model out of the box, not just the config-prior fallback.
+models/*
+!models/README.md
+!models/ranking_model.joblib
+!models/ranking_weights.json
+*.pkl
+*.bin
+*.pt
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+logs/
+*.log
